@@ -36,7 +36,7 @@ from PIL import Image
 # pytesseract.pytesseract.tesseract_cmd = '/opt/homebrew/bin/tesseract'
 
 def convertImageToText(filePath: str):
-    reader = easyocr.Reader(['en'], model_storage_directory='./src/detector')
+    reader = easyocr.Reader(['en'], model_storage_directory=os.path.join(os.path.dirname(__file__), '../detector'))
     documents = fitz.open(filePath)
     next_items = []
     matrix = fitz.Matrix(2, 2)
