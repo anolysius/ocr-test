@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="Main">
+    <file>user.png</file>
+  </qresource>
+  <qresource prefix="Buttons">
+    <file>check.png</file>
+    <file>cross.png</file>
+  </qresource>
+</RCC>
